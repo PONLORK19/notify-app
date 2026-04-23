@@ -3,14 +3,14 @@ import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 @Entity()
 export class Receipt {
   @PrimaryGeneratedColumn('uuid')
-  receiptId: string;
+  receiptId!: string;
 
   @Column()
-  name: string;
+  name!: string;
 
   @Column()
-  price: number;
+  price!: number;
 
   @Column()
-  issuedAt: Date;
+  issuedAt!: Date;
 }
