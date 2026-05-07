@@ -8,7 +8,7 @@ import {
 
 export class CreateReceiptDto {
   @IsDateString()
-  issuedAt?: string;
+  issuedAt!: string;
 
   @IsString()
   @IsNotEmpty()
